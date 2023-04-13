@@ -1,0 +1,24 @@
+<!-- we have two varibles with info: infoA, and infoB-->
+
+<p>{{ infoA}}</p>
+<p>{{ infoB}}</p>
+<p>{{ infoD}}</p>
+<body>
+
+
+    <div class="content">
+        {% for content in aboutMe%}
+            <p>{{content}}</p>
+        {% endfor %}
+    </div>
+    <form method=“post” action=“cgi-bin/contact.pl”>
+        <br>social:
+        
+        <input type=“text” name=“fullname” size=“50” maxlength=“45”>
+        
+    </form>
+    <div align="center"> 
+        <img src='\static\bernie.png' style='width:10%'></img>
+        <p>{{ infoC}}</p>
+    </div>
+</body>
